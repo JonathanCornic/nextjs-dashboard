@@ -12,7 +12,7 @@
   background-color: #2e374a;
 }
 
-.texts {
+.text {
   display: flex;
   flex-direction: column;
   gap: 20px;
