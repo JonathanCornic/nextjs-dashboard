@@ -1,7 +1,8 @@
 import styles from "@/app/ui/dashboard/single-product/single-product.module.css";
 import Image from "next/image";
 
-export default function SingleUserPage() {
+export default function SingleProductPage() {
+
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
@@ -22,8 +23,6 @@ export default function SingleUserPage() {
           <input type="text" name="color" placeholder="red" />
           <label>Size</label>
           <input type="text" name="size" placeholder="size" />
-          <label>Description</label>
-          <input type="text" name="description" placeholder="description" />
           <label>Category</label>
           <select name="category" id="category">
             <option value="general">Chosse a Category</option>
@@ -31,6 +30,8 @@ export default function SingleUserPage() {
             <option value="phone">Phone</option>
             <option value="computer">Computer</option>
           </select>
+          <label>Description</label>
+          <textarea name="description" rows={18} placeholder="description" />
           <button type="submit">Update</button>
         </form>
       </div>

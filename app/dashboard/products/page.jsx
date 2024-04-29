@@ -1,8 +1,8 @@
+import Pagination from "@/app/ui/dashboard/pagination/pagination";
+import styles from "@/app/ui/dashboard/products/produtcs.module.css";
+import Search from "@/app/ui/dashboard/search/search";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "@/app/ui/dashboard/products/produtcs.module.css"
-import Search from "@/app/ui/dashboard/search/search";
-import Pagination from "@/app/ui/dashboard/pagination/pagination";
 
 export default function Products() {
   return (
@@ -44,7 +44,7 @@ export default function Products() {
             <td>72</td>
             <td>
               <div className={styles.buttons}>
-                <Link href="/dashboard/products/test">
+                <Link href={`/dashboard/products/test`}>
                   <button className={`${styles.button} ${styles.view}`}>
                     View
                   </button>
